@@ -13,6 +13,7 @@
 		1A535E3D20F3F444002E5FBC /* Binary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A535E3B20F3F444002E5FBC /* Binary.xcdatamodeld */; };
 		1A535E3F20F3F445002E5FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A535E3E20F3F445002E5FBC /* Assets.xcassets */; };
 		1A535E4220F3F445002E5FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A535E4020F3F445002E5FBC /* LaunchScreen.storyboard */; };
+		1A650D1320F7E39B00885E95 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A650D1220F7E39B00885E95 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A535E3E20F3F445002E5FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A535E4120F3F445002E5FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A535E4320F3F445002E5FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A650D1220F7E39B00885E95 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A650D1320F7E39B00885E95 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				1A535E3320F3F444002E5FBC /* Binary */,
 				1A535E3220F3F444002E5FBC /* Products */,
+				1A650D1220F7E39B00885E95 /* GoogleMobileAds.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,7 +290,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D52WUQ9MK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Binary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = online.101app.Binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +313,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D52WUQ9MK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Binary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = online.101app.Binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
